@@ -27,6 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
       Route::get('/', 'Admin\AdminController@index')->name('admin.dashboard');
       Route::resource('roles','Admin\RoleController');
       Route::resource('users','Admin\UserController');
+      Route::resource('users','Admin\RuleController');
     });
 
      
